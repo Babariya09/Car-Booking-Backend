@@ -1,13 +1,11 @@
 const mongoose = require("mongoose");
 
 const AddDriver = new mongoose.Schema({
-    driver: String,
-    phone: String,
+    name: String,
+    phoneNumber: String,
     email: String,
-    licence: String,
-    alternativephone: String,
+    licenseNumber: String,
     state: String
-
 });
 
 module.exports = mongoose.model("Driver Data", AddDriver);
